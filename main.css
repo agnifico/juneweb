@@ -10,11 +10,17 @@ body,html {
 
 h4 {
     font-family: 'Karla';
-    color: #AF8260;
 }
 
+.fireh4  { color: #EE4E4E;}
+.waterh4 { color: #0065b1;}
+.earthh4 { color: #008932;}
+.windh4 { color: #f2e171;}
+
 h1 {
-    color: #803D3B;
+    font-family: "Montserrat";
+    font-weight: 700;
+    color: #FFD0D0;
 }
 
 p {
@@ -63,12 +69,15 @@ p {
     align-items: center;
     overflow: hidden;
     cursor: pointer;
+    opacity: 0.3;
+    color: #FFFFFF;
 }
 
 .el4-btn:hover {
     color: #ffffff;
     transform: scale(1.3);
     transition: 300ms all;
+    opacity: 1;
 }
 
 #firebtn:hover, #firebtn:focus {
