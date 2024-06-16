@@ -4,20 +4,22 @@ body,html {
     padding: 0;
     margin: 0;
     border-style: none;
-    background-color: #222831;
+    background-color: #322C2B;
     overflow: hidden;
 }
 
 h4 {
     font-family: 'Karla';
+    color: #AF8260;
 }
 
 h1 {
-    color: #FFB1B1;
+    color: #803D3B;
 }
 
 p {
     font-family: 'Inconsolata';
+    color: #E4C59E;
 }
 
 .my-bot-navbar {
@@ -38,6 +40,7 @@ p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    
     
 }
 
@@ -68,22 +71,22 @@ p {
     transition: 300ms all;
 }
 
-#firebtn:hover, #firebtn:focus, #firebtn:active:focus {
+#firebtn:hover, #firebtn:focus {
     color: #EE4E4E;
     
 }
 
-#waterbtn:hover, #waterbtn:focus, #waterbtn:active:focus {
+#waterbtn:hover, #waterbtn:focus {
     color: #0065b1;
     
 }
 
-#earthbtn:hover, #earthbtn:focus, #earthbtn:active:focus {
+#earthbtn:hover, #earthbtn:focus {
     color: #008932;
     
 }
 
-#windbtn:hover, #windbtn:focus, #windbtn:active:focus {
+#windbtn:hover, #windbtn:focus {
     color: #f2e171;
     
 }
