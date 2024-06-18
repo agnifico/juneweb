@@ -14,44 +14,49 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
   <title>a g n i f i c o</title>
 </head>
 
 <body>
 
-  <h1 style="display: flex; margin: auto; padding-top: 50px; justify-content: center;">「studio<span style="color: #FF9EAA">june</span>」</h1>
+  <h1 style="display: flex; margin: auto; padding-top: 50px; justify-content: center;">「studio<span
+      style="color: #FF9EAA">june</span>」</h1>
+      
 
   <div tabindex="0" style="max-width: 700px; height: 400px; margin: 10vh auto 7vh; overflow: hidden;">
 
 
-    <div id="divFire" style="display: block;">
+    <div id="divfire" style="display: block;">
       <h4 class="fireh4">Fire : The Indomitable Core</h4>
-      <p>Agni - my name, literally means "fire" in multiple in Indian languages. </p>
+      <p>Agni - my name, literally means <span class="underline fire">"fire"</span> in multiple in Indian languages. </p>
     </div>
 
-    <div id="divWater">
+    <div id="divwater" style="display: none;">
       <h4 class="waterh4">Water : The Flow of Life</h4>
-      <p>Although I'd spent most of my life either studying to be, or being a software developer, 7 years out of college
+      <p>Although I'd spent most of my life either studying to be, or being a <span class="underline water">software developer</span>, 7 years out of college
         in tech was as much as I could take. I quit my life of corporate computer science behind in early 2024, and
         after a short spell of aimlessness, the answer was clear as ever. I have always wanted to, and now will be an
-        artist. More specifically, a designer. What do I want to design? Graphics, products, processes, curriculums,
+        artist. More specifically, a <span class="underline water">designer</span>. What do I want to design? Graphics, products, processes, curriculums,
         ideas. The world. And funnily enough, a 4 year degree in Comp. Sci. isn't the worst course to understand how
         design works.
       </p>
     </div>
 
-    <div id="divEarth">
+    <div id="divearth" style="display: none;">
       <h4 class="earthh4">Earth : Wisdom, and expressions.</h4>
       <p>Food. Clothes. Languages. Ettiquettes. Folktales. Buildings. Ethics. Commute. Superstitions. Plants. Pets.
-        Families. Wildlife. Weather. Climate. Politics. Society. Housing. Money. The wind, the water, the sky. So much
-        to observe, feel, and express. Inspiration is everywhere!</p>
+        Families. Wildlife. Weather. Climate. Politics. Society. Housing. Money. The wind, the water, the sky. <span class="underline earth">So much
+        to observe, feel, and express.</span> Inspiration is everywhere!</p>
     </div>
 
-    <div id="divWind">
+    <div id="divwind" style="display: none;">
       <h4 class="windh4">Wind : Neverending Journeys</h4>
       <p>One of my favourite characters from the world of gaming, Kaedehara Kazuha has a simple motto to deal with the
-        vicissitudes of life that cause him to stop: Kaze no yukusaki yo. To the destination of the wind. Here's a list
+        vicissitudes of life that cause him to stop: <span class="underline wind">Kaze no yukusaki yo.</span> To the destination of the wind. Here's a list
         of my upcoming projects: </p>
     </div>
 
@@ -63,23 +68,23 @@
 
     <ul class="my-bot-navbar">
 
-    <li class="my-nav-item el4-item" onclick=" replaceEl4('divWater')">
-      <button class="my-nav-link el4-btn" id="waterbtn">🜄</button>
-    </li>
+      <li class="my-nav-item el4-item">
+        <button class="my-nav-link el4-btn" id="waterbtn" value="water">🜄</button>
+      </li>
 
-    <li class="my-nav-item el4-item" onclick="replaceEl4('divWind')">
-      <button class="my-nav-link el4-btn" id="windbtn">🜁</button>
-    </li>
+      <li class="my-nav-item el4-item">
+        <button class="my-nav-link el4-btn" id="windbtn" value="wind">🜁</button>
+      </li>
 
-    <li class="my-nav-item el4-item" onclick="replaceEl4('divEarth')">
-      <button class="my-nav-link el4-btn" id="earthbtn">🜃</button>
-    </li>
+      <li class="my-nav-item el4-item">
+        <button class="my-nav-link el4-btn" id="earthbtn" value="earth">🜃</button>
+      </li>
 
 
 
-    <li class="my-nav-item el4-item" onclick="replaceEl4('divFire')">
-      <button class="my-nav-link active el4-btn" id="firebtn">🜂</button>
-    </li>
+      <li class="my-nav-item el4-item">
+        <button class="my-nav-link el4-btn" id="firebtn" value="fire">🜂</button>
+      </li>
 
 
     </ul>
@@ -91,21 +96,24 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script>
 
-    document.getElementById('divFire').style.display = "block";
-    document.getElementById('divWater').style.display = "none";
-    document.getElementById('divWind').style.display = "none";
-    document.getElementById('divEarth').style.display = "none";
+    var lastDiv = document.getElementById('divfire');
+    var lastIcon = $('#firebtn');
 
-    function replaceEl4(show) {
-      document.getElementById('divFire').style.display = "none";
-      document.getElementById('divWater').style.display = "none";
-      document.getElementById('divWind').style.display = "none";
-      document.getElementById('divEarth').style.display = "none";
-      document.getElementById(show).style.display = "block";
+    const icons4 = document.getElementsByClassName("el4-btn");
+    for(var i = 0, len = icons4.length; i < len; i++) {
+      icons4[i].onclick = function clickSelect(btn) {
+      lastIcon.removeClass('selected-icon' + ' ' + lastIcon[0].value);
+      lastIcon = $(this);
+      lastDiv.style.display = 'none';
+      lastDiv = document.getElementById('div' + $(this)[0].value);
+      lastDiv.style.display = 'block';
+      $(this).addClass('selected-icon' + ' ' + $(this)[0].value);
     }
+}
+
     
   </script>
-  
+
 
 </body>
 

@@ -12,10 +12,10 @@ h4 {
     font-family: 'Karla';
 }
 
-.fireh4  { color: #EE4E4E;}
-.waterh4 { color: #0065b1;}
-.earthh4 { color: #008932;}
-.windh4 { color: #f2e171;}
+.underline {
+    text-decoration: underline #FFD0D0 dashed;
+  }
+
 
 h1 {
     font-family: "Montserrat";
@@ -34,6 +34,10 @@ p {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items:flex-start;
 }
 
 .my-bot-navbar li {
@@ -46,8 +50,7 @@ p {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    
-    
+    font-size: 20px;
 }
 
 .el4-item {
@@ -74,28 +77,32 @@ p {
 }
 
 .el4-btn:hover {
-    color: #ffffff;
-    transform: scale(1.3);
+    transform: scale(1.5);
     transition: 300ms all;
     opacity: 1;
 }
 
-#firebtn:hover, #firebtn:focus {
-    color: #EE4E4E;
-    
+.selected-icon {
+    opacity: 1;
 }
 
-#waterbtn:hover, #waterbtn:focus {
-    color: #0065b1;
-    
+.fire, .fireh4, #firebtn:hover {
+    color: #EB5353;
 }
 
-#earthbtn:hover, #earthbtn:focus {
-    color: #008932;
-    
+.water, .waterh4, #waterbtn:hover {
+    color: #4D96FF;
 }
 
-#windbtn:hover, #windbtn:focus {
-    color: #f2e171;
-    
+.earth, .earthh4, #earthbtn:hover {
+    color: #36AE7C;
 }
+
+.wind, .windh4, #windbtn:hover {
+    color: #F7F48B;
+}
+
+
+
+
+
