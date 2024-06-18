@@ -10,17 +10,24 @@ body,html {
 
 h4 {
     font-family: 'Karla';
+    font-size: 32px;
 }
 
 .underline {
+    border-bottom: 2px solid rgba(255, 208, 208, 0.5);
+    border-width: 3px;
+    padding-bottom: 2px;
     /* text-decoration: underline rgb(255, 208, 208) ; */
-    text-decoration: underline;
+    /* text-decoration: underline;
     text-decoration-color: rgba(255, 208, 208, 0.5);
-    text-decoration-style: dashed;
+    text-decoration-style: solid;
+    text-underline-offset: 2px;
+    text-decoration-thickness: 3px; */
   }
 
 
 h1 {
+    font-size: 48px;
     font-family: "Montserrat";
     font-weight: 700;
     color: #FFD0D0;
