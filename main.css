@@ -4,7 +4,7 @@ body,html {
     padding: 0;
     margin: 0;
     border-style: none;
-    background-color: #322C2B;
+    background-color: rgb(36, 38, 39);
     overflow: hidden;
 }
 
@@ -13,7 +13,8 @@ h4 {
 }
 
 .underline {
-    text-decoration: underline #FFD0D0 dashed;
+    /* text-decoration: underline rgb(255, 208, 208) ; */
+    text-decoration: underline rgba(255, 208, 208, 0.4);
   }
 
 
@@ -25,7 +26,7 @@ h1 {
 
 p {
     font-family: 'Inconsolata';
-    color: #E4C59E;
+    color: #F7F9F2;
 }
 
 .my-bot-navbar {
