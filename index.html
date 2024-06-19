@@ -9,6 +9,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js" integrity="sha512-B8ruywf8mKA4fm0K8SrrNhO5DTokuipFEo7rEnI0RVTt9p29MJKfg8TfOVwMAFZxgI+zOF4iwOA/ByvyJ/sslw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -23,8 +24,23 @@
 
 <body>
 
-  <h1 style="display: flex; margin: auto; padding-top: 50px; justify-content: center;">「 jxnes<span
-      style="color: #FF9EAA">forge 」</span></h1>
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+      </svg>
+    </div>
+    
+    <!-- <div class="cursor__ball cursor__ball--small">
+      <svg height="10" width="10">
+        <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+      </svg>
+    </div> -->
+  </div>
+
+  <a href="https://agnifico.github.io/juneweb/">
+  <h1 class="header hoverable">「 jxnes<span style="color: #FF9EAA;">forge 」v0.13</span></h1>
+  </a>
 
 
   <div tabindex="0" style="max-width: 700px; height: 400px; margin: 10vh auto 7vh; overflow: hidden;">
@@ -80,21 +96,21 @@
     <ul class="my-bot-navbar">
 
       <li class="my-nav-item el4-item">
-        <button class="my-nav-link el4-btn" id="waterbtn" value="water">🜄</button>
+        <button class="my-nav-link el4-btn hoverable" id="waterbtn" value="water">🜄</button>
       </li>
 
       <li class="my-nav-item el4-item">
-        <button class="my-nav-link el4-btn" id="windbtn" value="wind">🜁</button>
+        <button class="my-nav-link el4-btn hoverable" id="windbtn" value="wind">🜁</button>
       </li>
 
       <li class="my-nav-item el4-item">
-        <button class="my-nav-link el4-btn" id="earthbtn" value="earth">🜃</button>
+        <button class="my-nav-link el4-btn hoverable" id="earthbtn" value="earth">🜃</button>
       </li>
 
 
 
       <li class="my-nav-item el4-item">
-        <button class="my-nav-link el4-btn" id="firebtn" value="fire">🜂</button>
+        <button class="my-nav-link el4-btn hoverable" id="firebtn" value="fire">🜂</button>
       </li>
 
 
@@ -125,6 +141,50 @@
       const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
       const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
     }
+
+
+
+
+
+
+
+    const $bigBall = document.querySelector('.cursor__ball--big');
+// const $smallBall = document.querySelector('.cursor__ball--small');
+const $hoverables = document.querySelectorAll('.hoverable');
+
+// Listeners
+document.body.addEventListener('mousemove', onMouseMove);
+for (let i = 0; i < $hoverables.length; i++) {
+  if ((window.opener && !window.opener.closed)) break;
+  $hoverables[i].addEventListener('mouseenter', onMouseHover);
+  $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
+}
+
+// Move the cursor
+// window.CP.exitedLoop(0);
+
+function onMouseMove(e) {
+  TweenMax.to($bigBall, .4, {
+    x: e.pageX - 15,
+    y: e.pageY - 15 });
+
+  // TweenMax.to($smallBall, .1, {
+  //   x: e.pageX - 5,
+  //   y: e.pageY - 7 });
+
+}
+
+// Hover an element
+function onMouseHover() {
+  TweenMax.to($bigBall, .3, {
+    scale: 4 });
+
+}
+function onMouseHoverOut() {
+  TweenMax.to($bigBall, .3, {
+    scale: 1 });
+
+}
 
 
   </script>
