@@ -14,9 +14,9 @@ h4 {
 }
 
 .underline {
-    border-bottom: 2px solid rgba(255, 208, 208, 0.5);
-    border-width: 3px;
-    padding-bottom: 2px;
+    border-bottom: 2px dotted rgba(255, 255, 255, 0.5);
+    border-width: 2px;
+    padding-bottom: 1.5px;
     /* text-decoration: underline rgb(255, 208, 208) ; */
     /* text-decoration: underline;
     text-decoration-color: rgba(255, 208, 208, 0.5);
