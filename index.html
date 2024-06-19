@@ -25,22 +25,31 @@
 
   <h1 style="display: flex; margin: auto; padding-top: 50px; justify-content: center;">「 jxnes<span
       style="color: #FF9EAA">forge 」</span></h1>
-      
+
 
   <div tabindex="0" style="max-width: 700px; height: 400px; margin: 10vh auto 7vh; overflow: hidden;">
 
 
     <div id="divfire" style="display: block;">
       <h4 class="fireh4">Fire : The Indomitable Core</h4>
-      <p>Agni - my name, literally means <span class="underline fire">"fire"</span> in multiple in Indian languages. </p>
+      <p>Agni - my name, literally means <span class="underline fire" 
+          data-bs-toggle="popover" 
+          data-bs-trigger="hover" 
+          data-bs-placement="right"
+          data-bs-custom-class="custom-popover" 
+          data-bs-title="Hi babies!"
+          data-bs-content="Text me when you notice this? :3">
+          "fire"</span> in multiple in Indian languages. </p>
     </div>
 
     <div id="divwater" style="display: none;">
       <h4 class="waterh4">Water : Interwoven Fates</h4>
-      <p>Although I'd spent most of my life either studying to be, or being a <span class="underline water">software developer</span>, 7 years out of college
+      <p>Although I'd spent most of my life either studying to be, or being a <span class="underline water">software
+          developer</span>, 7 years out of college
         in tech was as much as I could take. I quit my life of corporate computer science behind in early 2024, and
         after a short spell of aimlessness, the answer was clear as ever. I have always wanted to, and now will be an
-        artist. More specifically, a <span class="underline water">designer</span>. What do I want to design? Graphics, products, processes, curriculums,
+        artist. More specifically, a <span class="underline water">designer</span>. What do I want to design? Graphics,
+        products, processes, curriculums,
         ideas. The world. And funnily enough, a 4 year degree in Comp. Sci. isn't the worst course to understand how
         design works.
       </p>
@@ -49,14 +58,16 @@
     <div id="divearth" style="display: none;">
       <h4 class="earthh4">Earth : Cradle of Expressions</h4>
       <p>Food. Clothes. Languages. Ettiquettes. Folktales. Buildings. Ethics. Commute. Superstitions. Plants. Pets.
-        Families. Wildlife. Weather. Climate. Politics. Society. Housing. Money. <span class="underline earth">The wind, the water, and the sky.</span> So much
+        Families. Wildlife. Weather. Climate. Politics. Society. Housing. Money. <span class="underline earth">The wind,
+          the water, and the sky.</span> So much
         to observe, feel, and express. Inspiration is everywhere!</p>
     </div>
 
     <div id="divwind" style="display: none;">
       <h4 class="windh4">Wind : Ever-forward Journeys</h4>
       <p>One of my favourite characters from the world of gaming, Kaedehara Kazuha has a simple motto to deal with the
-        vicissitudes of life that cause him to stop: <span class="underline wind">Kaze no yukusaki yo.</span> To the destination of the wind. Here's a list
+        vicissitudes of life that cause him to stop: <span class="underline wind">Kaze no yukusaki yo.</span> To the
+        destination of the wind. Here's a list
         of my upcoming projects: </p>
     </div>
 
@@ -101,18 +112,21 @@
     lastIcon.addClass('selected-icon fire');
 
     const icons4 = document.getElementsByClassName("el4-btn");
-    for(var i = 0, len = icons4.length; i < len; i++) {
+    for (var i = 0, len = icons4.length; i < len; i++) {
       icons4[i].onclick = function clickSelect(btn) {
-      lastIcon.removeClass('selected-icon' + ' ' + lastIcon[0].value);
-      lastIcon = $(this);
-      lastDiv.style.display = 'none';
-      lastDiv = document.getElementById('div' + $(this)[0].value);
-      lastDiv.style.display = 'block';
-      $(this).addClass('selected-icon' + ' ' + $(this)[0].value);
-    }
-}
+        lastIcon.removeClass('selected-icon' + ' ' + lastIcon[0].value);
+        lastIcon = $(this);
+        lastDiv.style.display = 'none';
+        lastDiv = document.getElementById('div' + $(this)[0].value);
+        lastDiv.style.display = 'block';
+        $(this).addClass('selected-icon' + ' ' + $(this)[0].value);
+      }
 
-    
+      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    }
+
+
   </script>
 
 
