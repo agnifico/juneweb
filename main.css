@@ -6,6 +6,7 @@ body,html {
     border-style: none;
     background-color: rgb(36, 38, 39);
     overflow: hidden;
+    cursor: none;
 }
 
 a {
@@ -47,6 +48,8 @@ h1 {
     font-weight: 700;
     color: #FFD0D0;
     cursor: none !important;
+    display: inline-flex;
+    max-width: fit-content;
 }
 
 p {
