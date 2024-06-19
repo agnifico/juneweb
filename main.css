@@ -123,12 +123,12 @@ p {
     --bs-popover-border-color: var(--bd-violet-bg);
     --bs-popover-border-radius: 0;
     --bs-popover-inner-border-radius: 0;
-    --bs-popover-header-bg: #C39898;
+    --bs-popover-header-bg: #DBB5B5;
     --bs-popover-header-color: #26355D;
-    --bs-popover-bg: #DBB5B5;
+    --bs-popover-bg: #FFD0D0;
     --bs-popover-body-padding-x: 1rem;
     --bs-popover-body-padding-y: .5rem;
-    box-shadow: 0 0 0 2px rgba(218,102,123,1), 4px 4px 0 0 rgba(218,102,123,1);
+    box-shadow: 0 0 0 1px rgba(218,102,123,1), 6px 6px 0 0 rgba(218,102,123,1);
   }
   
 
