@@ -100,7 +100,7 @@ h4 {
     height: 400px;
     margin: 10vh auto 7vh;
     overflow-y: scroll;
-    scrollbar-color: rgb(255, 255, 255, 1) rgb(0, 0, 0, 0);
+    scrollbar-color: rgb(255, 255, 255, .3) rgb(0, 0, 0, 0);
     scrollbar-gutter: stable;
     scrollbar-gutter: stable both-edges;
     /* border: 3px dashed rgba(112, 112, 112, 0.3); */

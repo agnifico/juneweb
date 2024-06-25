@@ -91,13 +91,13 @@
 }
 
 .nav input:checked~.menu li:nth-child(2) {
-    top: -75%;
+    top: -60%;
     left: -75%;
     transition-delay: 0.3s;
 }
 
 .nav input:checked~.menu li:nth-child(3) {
-    top: 75%;
+    top: 90%;
     left: -75%;
     transition-delay: 0.4s;
 }
