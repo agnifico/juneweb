@@ -108,6 +108,7 @@ h4 {
     max-width: 700px;
     height: 400px;
     margin: 10vh auto 30vh;
+    scrollbar-width: none;
     overflow-y: scroll;
     scrollbar-color: rgb(255, 255, 255, .3) rgb(0, 0, 0, 0);
     -webkit-scrollbar-color: rgb(255, 255, 255, .3) rgb(0, 0, 0, 0);
