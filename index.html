@@ -2,314 +2,337 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"
-    integrity="sha512-B8ruywf8mKA4fm0K8SrrNhO5DTokuipFEo7rEnI0RVTt9p29MJKfg8TfOVwMAFZxgI+zOF4iwOA/ByvyJ/sslw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <title>jxnesforge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Bree+Serif&family=Crete+Round:ital@0;1&family=Fira+Code:wght@300..700&family=Forum&family=Inconsolata:wght@200..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="main.css">
-  <link rel="stylesheet" href="menu.css">
-
-  <title>a g n i f i c o</title>
+  <link rel="stylesheet" href="v2.css">
+  <link rel="stylesheet" href="v2x.css">
+  <link rel="stylesheet" href="cube.css">
+  <link rel="stylesheet" href="aux.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"
+    integrity="sha512-B8ruywf8mKA4fm0K8SrrNhO5DTokuipFEo7rEnI0RVTt9p29MJKfg8TfOVwMAFZxgI+zOF4iwOA/ByvyJ/sslw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/CustomEase.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollToPlugin.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/TextPlugin.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.1.20/dist/lenis.css">
+  <script src="v1.js" defer></script>
+  <script src="v1x.js" defer></script>
 </head>
 
 <body>
-
   <div class="cursor">
     <div class="cursor__ball cursor__ball--big ">
       <svg height="30" width="30">
         <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
       </svg>
     </div>
-
-    <!-- <div class="cursor__ball cursor__ball--small">
-      <svg height="10" width="10">
-        <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
-      </svg>
-    </div> -->
   </div>
 
 
-  <h1 class="header hoverable">
-    <a href="https://agnifico.github.io/juneweb/">「 jxnes<span class="forge">forge 」</span>
-    </a>
-  </h1>
+  <div class="container">
 
+    <div class="terminal" inert>
 
-  <span class="underline fire" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right"
-    data-bs-custom-class="custom-popover" data-bs-title="Hi babies!" data-bs-content="Text me when you notice this? :3"
-    style="visibility: hidden;">
-    "fire"</span>
-
-  <div class="central-text-div">
-
-
-    <div id="divfire" style="display: block;">
-      <h4 class="fireh4">Fire : The Indomitable Core</h4>
-      <p>অগ্নি ; 火 ; Φωτιά ; 불 ; Fire ; Agni <br>
-        That's me.<br>
-        29 year old designer. Liberal. Gemini, and ENFP, for those who care. <br>
-        My friends tell me I am empathetic, idealistic, and a bit of a perfectionist. And I think they are correct.<br>
-        Besides, how do you become an idealist, and not a perfectionist? Or vice versa?<br.<br>
-
-          Anyway, I just want to live up to my name.<br>
-          Give warmth, show the way, light up the darkness.<br>
-          <span class="underline fire" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right"
-            data-bs-custom-class="custom-popover" data-bs-title="Meditations"
-            data-bs-content="Marcus Aurelius, and his ideologies (even if a bit dated, to say the least) has had a profound influence on me. I think, era/age-adjusted, dude was spitting facts.">Elevate.
-            Or carry.</span>
-
-      </p>
-    </div>
-
-    <div id="divwater" style="display: none;">
-      <div>
-        <h4 class="waterh4">Water : Interwoven Fates</h4>
+      <div class="terminal-head">
+        <div class="terminal-prompt">
+          [<span id="trm-2">you</span>@<span id="trm-3">jxnesforge</span>]:&thinsp;
+        </div>
+        <div class="terminal-text"> <span id="trm-4"> </span> <span id="trm-1"> </span> <span id="trm-0"> </span> <span
+            id="trm-5"> </span> </div>
       </div>
-      <div>
-        <p>
-          The combination of being an Indian Bengali boy with a hardworking but traditional parent resulted in a not so
-          surprising outcome. I have spent most of my life studying to be a software developer, followed by being one.
-          However, when one gets an unexpected push in life, it makes one think. Turns out, <span
-            class="underline water" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right"
-            data-bs-custom-class="custom-popover" data-bs-title="In hindsight..."
-            data-bs-content="Should have left earlier. The whole organisation was a sinking ship, only saved by HPE :P">7
-            years in tech</span>, is all I could take.
-      </div>
-      <div>
-        <p>I quit my life in corporate computer science in early 2024, and
-          decided to give myself the space to figure out (at the risk of sounding extremely cliched) about what would
-          make me happy. <br>
-          You see, I really enjoy everything about creating/building things. Creating art really gives me joy. But so
-          does building stuff with code. It's just the corporate stuff I wasn't totally into. <br>
-      </div>
-      <div>
-        <p>
-          However, I feel that the word artist is perhaps too restricting. I want to be a designer. The next logical
-          prompt would be - design what?<br>
-          The world.<br><br>
-          Before you roll your eyes, hear me out. I see the world as an ever-moving, interwoven machine. All its
-          components, small and large, influence each other. So, by working on one, I am invariably bound to impact the
-          other. And that is what I want to do going forward. I want to be impactful.<br>
-      </div>
-      <div>
-        <p>Starting with well-thought out graphics, moving into products and processes, and then curricula.<br>
-          Funnily enough, it seems that my <span class="underline water" data-bs-toggle="popover"
-            data-bs-trigger="hover" data-bs-placement="right" data-bs-custom-class="custom-popover"
-            data-bs-title="B.Tech, CCE, 2019"
-            data-bs-content="Manipal Institute of Technology, Manipal, KA. BEST FKN TIME!">4 year degree in Computer
-            Science</span> is going to come into clutch to understand how the world of design works.
 
-        </p>
-
+      <div class="terminal-tags-container">
+        <div class="terminal-shutter" id="ts1"></div>
+        <div class="terminal-shutter" id="ts2"></div>
+        <div class="box69">
+          <div class="terminal-tags" id="gd-tag-set">
+            <div class="tag">Photoshop</div>
+            <div class="tag">Illustrator</div>
+            <div class="tag">Affinity Designer</div>
+            <div class="tag">Procreate</div>
+            <div class="tag">RAW Post-processing</div>
+            <div class="tag">UX/UI</div>
+            <div class="tag">Branding</div>
+            <div class="tag">Typography</div>
+            <div class="tag">Wireframing</div>
+            <div class="tag">Vector Illustration</div>
+          </div>
+          <div class="terminal-tags hidden" id="wd-tag-set">
+            <div class="tag">HTML / CSS</div>
+            <div class="tag">JavaScript</div>
+            <div class="tag">Python</div>
+            <div class="tag">node.js</div>
+            <div class="tag">GSAP</div>
+            <div class="tag">Mobile Responsiveness</div>
+            <div class="tag">CMS / Wordpress</div>
+            <div class="tag">Web Builders</div>
+            <div class="tag">UX / UI</div>
+            <div class="tag">Wireframing</div>
+          </div>
+          <div class="terminal-tags hidden" id="cw-tag-set">
+            <div class="tag">Keyword Research</div>
+            <div class="tag">Content Writing</div>
+            <div class="tag">Copywriting</div>
+            <div class="tag">Editing</div>
+            <div class="tag">Brand Storytelling</div>
+            <div class="tag">Landing Page Copy</div>
+            <div class="tag">Content Strategy</div>
+            <div class="tag">SEO</div>
+            <div class="tag">Style Guide Adherence</div>
+            <div class="tag">Conversion Copywriting</div>
+          </div>
+        </div>
       </div>
     </div>
 
-    <div id="divearth" style="display: none;">
-      <h4 class="earthh4">Earth : Cradle of Expressions</h4>
-      <p>Food. Clothes. Languages. Buildings. Climate. Markets.<br>
-        Plants. Pets. Population. Ettiquettes. Families. Folktales. <br>
-        Politics. Psychology. Math. Music. Architecture. Design. <br>
-        The wind, the water, and the sky.<br><br>
+    <div inert class="panel bg-layer">
+      <video autoplay muted loop id="myVideo">
+        <!-- <source src="https://videos.pexels.com/video-files/5561380/5561380-hd_1920_1080_25fps.mp4" type="video/mp4"> -->
+        <source src="https://videos.pexels.com/video-files/9665235/9665235-hd_1920_1080_25fps.mp4">
+      </video>
 
-        I strive to make my art reflective of the world, its intricacies, and the issues at hand. The whole world
-        inspires my work.<br>
-        And the idea is to <span class="underline earth" data-bs-toggle="popover" data-bs-trigger="hover"
-          data-bs-placement="right" data-bs-custom-class="custom-popover" data-bs-title="Hi babies!"
-          data-bs-content="Text me when you notice this? :3">influence the whole world,<span> in turn.
-
-      </p>
     </div>
+    <section class="panel logo-panel">
 
-    <div id="divwind" style="display: none;">
-      <h4 class="windh4">Wind : Ever-forward Journeys</h4>
-      <p>One of my favourite characters from the world of gaming, Kaedehara Kazuha has a simple motto to deal with the
-        vicissitudes of life that cause him to stop: Kaze no yukusaki yo. To the destination of the wind.<br>
+      <div class="hero">
+        <div class="welcome hoverable">
+          <img src="images/Logo_Main.svg" width="150px" height="150px">
+          <div class="hero-line" id="h1a">welcome to</div>
+          <div class="hero-line" id="h1b">
+            <span id="h1c">June's </span>
+            <span id="h1d">Forge</span>
+          </div>
+          <div class="common-text" style="text-align: center; padding-top: 2rem;">A web/visual design studio.<br>📌
+            Bengaluru, India</div>
 
-        <span class="underline wind" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right"
-          data-bs-custom-class="custom-popover" data-bs-title="Hi babies!"
-          data-bs-content="Text me when you notice this? :3">Here are some of my upcoming projects:</span><br>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel me-panel">
+      <div class="box2">
+
+        <div class="common-text" style="text-align: center; padding-bottom: 2rem;">Hey there!</div>
+        <div class="cube-container">
+          <div class="cube">
+            <div class="face bottom"></div>
+            <div class="face top"></div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+            <div class="face front"></div>
+            <div class="face back"></div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="panel skills-panel">
+      <div class="box">
+
+        <div class="desk2">
+          <!-- <div class="common-text">The 3 core services of The Forge:</div> -->
+          <div class="btn-tray" id="bt-1">
+            <button onclick="openTab('cw')" class="btn-one hoverable">Content Writing</button>
+            <button onclick="openTab('gd')" class="btn-one hoverable button-active">Graphic Design</button>
+            <button onclick="openTab('wd')" class="btn-one hoverable">Web Design</button>
+          </div>
+          <div class="details">
+            <div class="box armoury-details" id="gd">
+              <div class="common-text">
+                Logos. Posters. Symbols. Packaging. Cards. Illustrations. Wireframing. UX/UI.<br><br>
+                Thy shall be done. <br>
+                With an exposure in design spanning a decade, I can handle almost any requirement, and all clients.
+                Whether you are crystal clear about your needs, or require help in polishing your ideas finely, the
+                <span class="underline">Forge</span> has you covered. <br>
+                Our trump card will always be our diverse knowledge, awareness, and design ideologies rooted in
+                psychology.
+              </div>
+
+            </div>
+            <div class="box armoury-details hidden" id="cw">
+              <div class="common-text">
+                I used to serve as the Editor-in-Chief of my college's media publication. To use words in a way that
+                shapes the mindset of the masses, is exactly what I like doing, and am good at. Forget languages, I
+                can
+                speak Colin Firth from Kingsman (hella formal), Ms. Maisel (oh-so-quippy), and Andrew West from
+                Fleabag
+                (poetic, sad boi hours). Basically, <i>wahi</i>, range <i>hai ladke mein.</i> Sometimes Al Pacino from
+                Godfather too.<br><br>
+                <i>* Pulls out a gruff, old man voice * </i><br>
+                "Imma make you an offer you can't refuse!"
+              </div>
+
+            </div>
+            <div class="box armoury-details hidden" id="wd">
+              <div class="common-text">
+                Let's be real: your average "web developer" in India can't do all of front-end, back-end, and design.
+                Even if they could, can they fill in the content with their own, well-crafted words? <br><br>
+                Here I am, and I can promise, expertise in full-stack development backed by a Computer Science degree
+                is
+                absolutely the least of my skills. <br>
+                Keep it simple, my friend, make sure your website guy can design, and write!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
-      </p>
-    </div>
+    <section class="gallery-panel panel">
 
+      <div class="box3">
+        <div class="img-grid" id="img-grid-one">
+          <img src="images/Fire2.jpg" alt="" srcset="">
+          <img src="images/Water3.jpg" alt="" srcset="">
+          <img src="images/Earth3.jpg" alt="" srcset="">
+          <img src="images/Wind2.jpg" alt="" srcset="">
+          <img src="images/Wind3.jpg" alt="" srcset="">
+          <img src="images/Water2.jpg" alt="" srcset="">
+        </div>
+        <div class="img-grid hidden" id="img-grid-two">
+          <img src="images/forge-scimitar.svg" alt="" srcset="">
+          <img src="images/forge-shield.svg" alt="" srcset="">
+          <img src="images/forge-spear.svg" alt="" srcset="">
+        </div>
+      </div>
+
+      <div class="box4">
+
+        <div class="social-links">
+          <ul>
+            <!-- <p class="common-text">Helloz</p> -->
+            <li>
+              <a href="https://github.com/agnifico" target="_blank">
+
+                GitHub
+              </a>
+            </li>
+            <li>
+              <a href="https://dribbble.com/jxnesforge" target="_blank">
+                Dribbble
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com/zerodegreefire" target="_blank">
+                Instagram
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="btn-tray" id="bt-2">
+          <button class="btn-two" onclick="openTab2('img-grid-one')">
+            Isometric
+          </button>
+          <button class="btn-two" onclick="openTab2('img-grid-two')">
+            Forge Blueprints
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="panel contacts-panel">
+      <div class="box2">
+        <div class="contact-card">
+          <!-- <div class="lol">♠︎</div> -->
+          <div class="box8">
+            <div class="box7">
+              <img src="images/IMG_20240311_132729484.jpg" alt="" srcset="" class="contact-img">
+            </div>
+            <div class="box9">
+              <p class="cats">Jxne</p>
+              <p class="hue">ForgeMaster</p>
+            </div>
+          </div>
+          <div class="card-details">
+            <div class="frills1">
+              <!-- <div class="symbol">🜂</div>
+              <div class="symbol">🜂</div>
+              <div class="symbol">🜄</div>
+              <div class="symbol">🜄</div> -->
+            </div>
+            <div class="traits">
+              <div class="trait">Strategic</div>
+              <div class="trait">Pioneering</div>
+              <div class="trait">Approachable</div>
+              <div class="trait">Confident</div>
+              <div class="trait">Insightful</div>
+              <div class="trait">Empathetic</div>
+            </div>
+
+            <div class="flavour-text">
+              The ForgeMaster of all trades.<br>
+              And yes, it's June. Just cooler.<br>
+            </div>
+
+            <div class="card-links-box">
+              <div class="card-link">
+                <a href="https://dribbble.com/jxnesforge" target="_blank">
+                  <img src="images/icons8-dribbble.svg" alt="">
+                </a>
+              </div>
+              <div class="card-link">
+                <a href="https://instagram.com/zerodegreefire" target="_blank">
+                  <img src="images/icons8-instagram.svg" alt="">
+                </a>
+              </div>
+              <div class="card-link">
+                <a href="https://github.com/agnifico" target="_blank">
+                  <img src="images/icons8-github-50.png" alt="">
+                </a>
+              </div>
+              <div class="card-link">
+                <a href="https://www.linkedin.com/in/agnihotra-bhattacharya/" target="_blank">
+
+                  <img src="images/icons8-linkedin.svg" alt="">
+                </a>
+              </div>
+              <div class="card-link">
+                <a href="mailto:agnx13@proton.me">
+                  <img src="images/icons8-letter-50.png" alt="">
+                </a>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel quote-panel">
+      <div class="landing">
+        <div class="quote-line" id="q1a">The master <span id="q1b" style="color: #df3756;">economist</span> must possess
+          a </div>
+        <div class="quote-line" id="q1c">rare combination of gifts. <span id="q1d">He must be:</span> </div>
+        <div class="quote-line sq1" style="color: #9FC581;">a mathematician, </div>
+        <div class="quote-line sq1" style="color: #89B865;">a historian, </div>
+        <div class="quote-line sq1" style="color: #659B5E;">a statesman, </div>
+        <div class="quote-line sq1" style="color: #537E4E;">and a philosopher.</div>
+      </div>
+      <audio id="hard-click" src="sounds/mixkit-hard-typewriter-click-1119.wav" preload></audio>
+      <audio id="soft-click" src="sounds/mixkit-typewriter-soft-click-1125.wav" preload></audio>
+      <audio id="ui-click" src="sounds/ui-click.wav" preload></audio>
+      <audio id="wine-glass" src="sounds/mixkit-wine-glass-clink-2936.wav" preload></audio>
+    </section>
   </div>
 
-  <!-- <div class="vertical-nav">
 
-    <ul>
-
-      <li>
-        <button class="hoverable"><img src="images/map.svg" alt="" height="30px" width="30px" style="filter: invert(100);"> Map</button>
-      </li>
-
-      <li>
-        <button class="hoverable"><img src="images/backpack.svg" alt="" height="30px" width="30px" style="filter: invert(100);"> Backpack</button>
-      </li>
-
-      <li>
-        <button class="hoverable"><img src="images/shield.svg" alt="" height="30px" width="30px" style="filter: invert(100);"> Character</button>
-      </li>
-
-    </ul>
-  </div> -->
-
-
-  <!-- <nav class="nav">
-    <input id="menu" type="checkbox">
-    <label for="menu">Menu</label>
-    <ul class="menu">
-      <li>
-        <a href="#0">
-          <span>Gallery</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <span>Armoury</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <span>Artist</span>
-        </a>
-      </li>
-      <li>
-        <a href="#0">
-          <span>Mail</span>
-        </a>
-      </li>
-    </ul>
-  </nav> -->
-
-
-  <!-- -------------------------------------------------------------------- -->
-
-  <div style="display: flex; position: sticky; left: auto; bottom: 15%; align-items: center; justify-content: center; ">
-
-    <ul class="my-bot-navbar" type="checkbox">
-
-      <li>
-        <button class="my-nav-link el4-btn hoverable" id="waterbtn" value="water">🜄</button>
-      </li>
-
-      <li>
-        <button class="my-nav-link el4-btn hoverable" id="windbtn" value="wind">🜁</button>
-      </li>
-
-      <li>
-        <button class="my-nav-link el4-btn hoverable" id="earthbtn" value="earth">🜃</button>
-      </li>
-
-      <li>
-        <button class="my-nav-link el4-btn hoverable" id="firebtn" value="fire">🜂</button>
-      </li>
-    </ul>
-  </div>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script>
-
-    var bgmain = '#242627';
-    var bgnow = bgmain;
-    var bgalt = '#1B4242';
-
-    window.onload = function () {
-      var ex1 = document.getElementById('toggle-a');
-      var ex2 = document.getElementById('toggle-b');
-
-      ex1.onclick = handler;
-      ex2.onclick = handler;
-    }
-
-    function handler() {
-      if (bgnow == bgmain) {
-        document.body.style.background = bgalt;
-        bgnow = bgalt;
-      } else {
-        document.body.style.background = bgmain;
-        bgnow = bgmain;
-      }
-
-    }
-
-    var lastDiv = document.getElementById('divfire');
-    var lastIcon = $('#firebtn');
-    lastIcon.addClass('selected-icon fire');
-
-    const icons4 = document.getElementsByClassName("el4-btn");
-    for (var i = 0, len = icons4.length; i < len; i++) {
-      icons4[i].onclick = function clickSelect(btn) {
-        lastIcon.removeClass('selected-icon' + ' ' + lastIcon[0].value);
-        lastIcon = $(this);
-        lastDiv.style.display = 'none';
-        lastDiv = document.getElementById('div' + $(this)[0].value);
-        lastDiv.style.display = 'block';
-        $(this).addClass('selected-icon' + ' ' + $(this)[0].value);
-      }
-
-      const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
-      const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
-    }
-
-    const $bigBall = document.querySelector('.cursor__ball--big');
-    // const $smallBall = document.querySelector('.cursor__ball--small');
-    const $hoverables = document.querySelectorAll('.hoverable');
-
-    // Listeners
-    document.body.addEventListener('mousemove', onMouseMove);
-    for (let i = 0; i < $hoverables.length; i++) {
-      if ((window.opener && !window.opener.closed)) break;
-      $hoverables[i].addEventListener('mouseenter', onMouseHover);
-      $hoverables[i].addEventListener('mouseleave', onMouseHoverOut);
-    }
-
-    // Move the cursor
-    // window.CP.exitedLoop(0);
-
-    function onMouseMove(e) {
-      TweenMax.to($bigBall, .4, {
-        x: e.pageX - 10,
-        y: e.pageY - 10
-      });
-
-      // TweenMax.to($smallBall, .1, {
-      //   x: e.pageX - 5,
-      //   y: e.pageY - 7 });
-
-    }
-
-    // Hover an element
-    function onMouseHover() {
-      TweenMax.to($bigBall, .3, {
-        scale: 4
-      });
-
-    }
-    function onMouseHoverOut() {
-      TweenMax.to($bigBall, .3, {
-        scale: 1
-      });
-
-    }
-
-
-  </script>
 
 
 </body>
