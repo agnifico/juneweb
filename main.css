@@ -308,10 +308,10 @@
 
 .sc-heading {
 	width: 100%;
-	color: #d66666;
-	font-size: 1.75rem;
+	color: #44c6a7;
+	font-size: 1.3rem;
 	text-align: left;
-	border-bottom: 2px solid #d66666;
+	border-bottom: 2px solid #44c6a7;
 	margin-bottom: 0.5rem;
 	font-family: 'Silkscreen';
 }
@@ -338,16 +338,30 @@
 		background-color: #cacaca;
 		border-radius: 6px;
 		flex-grow: 1;
-		box-shadow: 2px 2px 0 0 rgba(67, 67, 67, 0.5);
+		box-shadow: 2px 2px 0 0 #21715e;
+		font-weight: 600;
+	}
+
+	.tool {
+		background-color: #21715e;
+		color: #bcf8ea;
+		box-shadow: 2px 2px 0 0 #bfe1d9ab;	
 	}
 }
 
 .sc-text {
 	/* margin-block: 2rem; */
 	/* min-width: 76ch; */
-	font-size: 1.2rem;
-	color: #a2a2a2;
+	font-size: 1rem;
+	color: #cacaca;
 	font-family: 'Ubuntu Mono';
+
+	.red {
+		color: #d88383;
+	}
+	.green {
+		color: #44c6a7;
+	}
 }
 
 .controls-main {
@@ -501,7 +515,7 @@
 	box-shadow: rgba(0, 0, 0, 0.7) 2px 2px 4px inset;
 }
 
-/* Base styles for the D-pad (Mobile-First approach) */
+
 .d-pad {
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -547,6 +561,17 @@
 	}
 }
 
+.d-pad button:hover{
+	transform: translateY(-3px);
+}
+
+.d-pad button:active{
+	transform: translateY(0px);
+	box-shadow:
+		rgba(0, 0, 0, 0.4) 0px 2px 4px 1px,
+		rgba(0, 0, 0, 0.3) 0px 9px 15px -3px;
+}
+
 .d-pad button:disabled {
 	background-color: var(--secondary);
 	/* background-color: inherit; */
@@ -555,6 +580,8 @@
 	z-index: 1;
 	box-shadow: none;
 	box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px inset;
+	height: 110%;
+	transform: translateY(-3px);
 }
 
 #up {
@@ -692,8 +719,9 @@
 	}
 
 	.sc-heading {
-		font-size: 1.2rem;
-		text-align: center;
+		font-size: .9rem;
+		text-align: left;
+		padding: 0;
 	}
 
 	.console-top {
@@ -738,4 +766,5 @@
 	.d-pad button {
 		font-size: 1.8em;
 	}
+
 }
