@@ -16,6 +16,7 @@
 	scroll-snap-type: mandatory;
 	scroll-snap-type: y mandatory;
 	background-color: #2d283a;
+	background-color: #26322c;
 	/* background-color: #313131; */
 	scrollbar-width: none;
 	z-index: 0;
@@ -73,7 +74,7 @@
 
 .console-top {
 	position: relative;
-	padding-top: 2rem;
+	padding-top: 3rem;
 	padding-bottom: 1rem;
 	display: flex;
 	flex-direction: column;
@@ -183,7 +184,7 @@
 	overflow: hidden;
 	width: 90%;
 	height: 40vh;
-	margin: 2rem auto 0;
+	margin: 1rem auto 0;
 	background-color: #383838;
 	border-radius: 20px;
 	box-shadow:
@@ -316,6 +317,12 @@
 	font-family: 'Silkscreen';
 }
 
+.display-image {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
 .text-bubbles {
 	/* max-width: 50ch; */
 	height: min-content;
@@ -345,7 +352,7 @@
 	.tool {
 		background-color: #21715e;
 		color: #bcf8ea;
-		box-shadow: 2px 2px 0 0 #bfe1d9ab;	
+		box-shadow: 2px 2px 0 0 #bfe1d9ab;
 	}
 }
 
@@ -359,8 +366,19 @@
 	.red {
 		color: #d88383;
 	}
+
 	.green {
 		color: #44c6a7;
+	}
+}
+
+.sc-link {
+	text-decoration: none;
+	font-size: 1rem;
+	color: #d88383;
+	font-family: 'Ubuntu Mono';
+	&:hover {
+		text-decoration: underline;
 	}
 }
 
@@ -561,11 +579,11 @@
 	}
 }
 
-.d-pad button:hover{
+.d-pad button:hover {
 	transform: translateY(-3px);
 }
 
-.d-pad button:active{
+.d-pad button:active {
 	transform: translateY(0px);
 	box-shadow:
 		rgba(0, 0, 0, 0.4) 0px 2px 4px 1px,
@@ -711,6 +729,41 @@
 	}
 }
 
+.tab {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	padding: 2rem;
+	display: flex;
+
+	.nav {
+		position: absolute;
+		inset: auto 0;
+		bottom: 0;
+		height: fit-content;
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+		padding: .75rem .5rem;
+		background-color: #21715e;
+
+
+	}
+
+	.right {
+		margin: 0;
+		position: relative;
+		height: 100%;
+		display: flex;
+		width: 50%;
+		background-color: #21715e;
+		font-family: "Raleway";
+		font-weight: 500;
+		font-size: .8rem;
+	}
+
+}
+
 @media only screen and (max-width: 700px) {
 
 	.console-bot,
@@ -753,6 +806,11 @@
 			font-size: 8pt;
 		}
 	}
+
+	.button-1 {
+		padding: 4px 8px;
+		font-size: .8rem;
+	}
 }
 
 @media only screen and (max-width: 1200px) {}
@@ -766,5 +824,7 @@
 	.d-pad button {
 		font-size: 1.8em;
 	}
+
+
 
 }
